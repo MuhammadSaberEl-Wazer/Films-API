@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Route Exam 2 - JS</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/react 512.png" />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <section class="search" id="search">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 section-title">
+            <h2 id="section-title" href="#"></h2>
+          </div>
+          <div class="col-md-6 col-10 item item-word">
+            <input type="text" class="col-11" id="local" placeholder="Get movies by word"
+            />
+          </div>
+          <div class="col-md-6 col-12 item item-search">
+            <input type="text" class="col-11" id="global" placeholder="Search" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content" id="content">
+      <div class="container">
+        <div class="row" id="filmsConto"></div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 contact-title item">
+            <h2>Contact Us</h2>
+          </div>
+          <div class="col-md-6 col-12 contact-item item">
+            <input
+              class="col-12"
+              type="text"
+              id="contact-name"
+              placeholder="Enter your name"
+            />
+            <p id="contact-name-invalid"></p>
+          </div>
+          <div class="col-md-6 col-12 contact-item item">
+            <input
+              class="col-12"
+              type="email"
+              id="contact-email"
+              placeholder="Enter your E-Mail"
+            />
+            <p id="contact-email-invalid"></p>
+          </div>
+          <div class="col-md-6 col-12 contact-item item">
+            <input
+              class="col-12"
+              type="text"
+              id="contact-phone"
+              placeholder="Enter your phone"
+            />
+            <p id="contact-phone-invalid"></p>
+          </div>
+          <div class="col-md-6 col-12 contact-item item">
+            <input
+              class="col-12"
+              type="text"
+              id="contact-age"
+              placeholder="Enter your age"
+            />
+            <p id="contact-age-invalid"></p>
+          </div>
+          <div class="col-md-6 col-12 contact-item item">
+            <input
+              class="col-12"
+              type="password"
+              id="contact-password-one"
+              placeholder="Enter your password"
+            />
+            <p id="contact-password1-invalid"></p>
+          </div>
+          <div class="col-md-6 col-12 contact-item item">
+            <input
+              class="col-12"
+              type="password"
+              id="contact-password-two"
+              placeholder="Re-Enter your password"
+            />
+            <p id="contact-password2-invalid"></p>
+          </div>
+          <div class="col-md-6 col-10 contact-item">
+            <button id="submit-btn">Submit</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sidebar" id="sidebar">
+      <div class="row">
+        <div class="side-items">
+          <div class="side-left col-9 float-start">
+            <div class="left-upper">
+              <p class="anmi" id="nowPlaying">Now playing</p>
+              <p class="anmi" id="popular">Popular</p>
+              <p class="anmi" id="topRated">Top Rated</p>
+              <p class="anmi" id="trending">Trending</p>
+              <p class="anmi" id="upcoming">Upcoming</p>
+              <p class="anmi" id="contactUs">
+                <a href="#contact">Contact Us</a>
+              </p>
+            </div>
+            <div class="left-lower">
+              <div class="left-icons">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fas fa-globe"></i>
+              </div>
+              <p>Copyright Â© 2019 All Rights Reserved.</p>
+            </div>
+          </div>
+          <div class="side-right col-3 float-start">
+            <div class="right1">
+              <img src="images/logo.png" class="w-50" alt="" />
+            </div>
+            <div class="right2" id="side-toggle-btn">
+              <i id="side-toggle-btn-icon" class="fa fa-align-justify"></i>
+            </div>
+            <div class="right3">
+              <i class="fas fa-globe"></i>
+            </div>
+            <div class="right4">
+              <i class="fas fa-share-alt"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,316 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+
+  background-color: #000000;
+  position: relative;
+}
+
+/* Search */
+
+
+#search {
+  /* background-color: blueviolet; */
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+
+#search .row {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#section-title {
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-size: 3rem;
+  color: white;
+  text-align: center;
+  margin-bottom: 2rem;
+  cursor: pointer;
+  -webkit-text-stroke-width: .1px;
+  -webkit-text-stroke-color: blueviolet;
+  transition: all .2s ease;
+  opacity: 0;
+
+}
+#section-title:hover{
+  color:#dc3545;
+  transition: all .2s ease;
+}
+
+#search .item {
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+}
+
+#search .item input {
+  padding: 0.5rem;
+  background-color: transparent;
+  border: none;
+  border-bottom: white 0.5px solid;
+  color: white;
+}
+
+#search .item input::placeholder {
+  text-align: center;
+  color: #aaa;
+}
+
+#search .item input:focus {
+  border: none !important;
+  box-shadow: 0 0 0 0.2rem rgb(0, 110, 255);
+}
+
+/* End of Search */
+
+/* Content */
+
+#content {
+  margin-bottom: 20vh;
+}
+
+#content .content-item {
+  background-color: transparent;
+  height: 85vh;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  position: relative;
+  margin-top: 2rem;
+}
+
+#content .content-item img {
+  position: absolute;
+}
+
+#content .content-item #content-info {
+  background-color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  top: 100%;
+  height: 85vh;
+  text-align: center;
+  font-family: Segoe UI Light, Tahoma, Geneva, Verdana, sans-serif;
+  color: #000;
+  font-weight: 600;
+  transition: all 1s ease;
+}
+
+#content .content-item #content-info h3 {
+  margin-top: 6rem;
+  font-size: 2rem;
+}
+
+#content .content-item #content-info p {
+  font-size: 1.1rem;
+}
+
+#conto:hover #content-info {
+  top: 0%;
+  transition: all 1s ease;
+}
+
+/* End of Content */
+
+/* Contact */
+
+#contact {
+  /* background-color: blueviolet; */
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+
+#contact .row {
+  flex-direction: row;
+  justify-content: space-between;
+}
+#contact .item {
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#contact .contact-title {
+  color: #fff;
+  font-weight: 800;
+  text-align: center;
+}
+
+#contact .item input {
+  padding: 0.5rem;
+  background-color: transparent;
+  border: none;
+  border-bottom: white 0.5px solid;
+  margin: 1rem;
+  color: white;
+}
+
+#contact .item p {
+  color: red;
+}
+
+#contact .item input::placeholder {
+  text-align: center;
+  color: #aaa;
+}
+
+#contact .item input:focus {
+  border: none !important;
+  box-shadow: 0 0 0 0.2rem rgb(0, 110, 255);
+}
+
+#contact #submit-btn {
+  color: #dc3545;
+  font-weight: 500;
+  background-color: transparent;
+  border: #dc3545 solid 0.5px;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+}
+
+/* End of Contact */
+
+/* SideBar */
+
+#sidebar {
+  width: 18rem;
+
+  height: 100vh;
+  position: fixed;
+  bottom: 0px;
+  left: -13.5rem;
+  z-index: 10;
+  text-align: center;
+  transition: all 1s ease-in-out;
+}
+
+#sidebar .side-items {
+  height: 100vh;
+}
+
+#sidebar .side-left {
+  background-color: #000000;
+  color: white;
+  padding: 0.5rem;
+  height: 100vh;
+  font-family: "Segoe UI Light", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#sidebar .side-left .left-upper {
+  padding: 0rem 1rem;
+  text-align: left;
+  height: 75%;
+}
+#sidebar .side-left .left-upper p {
+  color: white;
+  /* font-weight: 600; */
+  padding-right: 1rem;
+  padding-left: 1rem;
+  margin: 1.5rem 0;
+  cursor: pointer;
+  position: relative;
+  top: 100%;
+  opacity: 0.1;
+  transition: color .5s ease;
+}
+
+#sidebar .side-left .left-upper p a {
+  text-decoration: none;
+  color: white;
+  /* font-weight: 600; */
+  transition: color .5s ease;
+}
+
+#sidebar .side-left .left-upper p:hover {
+  color: #dc3545;
+  transition: color .5s ease;
+}
+
+#sidebar .side-left .left-upper p a:hover {
+  color: #dc3545;
+  transition: color .5 ease;
+}
+
+#sidebar .side-left .left-lower i {
+  margin: 0.5rem;
+  cursor: pointer;
+}
+
+#sidebar .side-left .left-lower p {
+  margin-top: 1rem;
+  color: #aaa;
+}
+
+#sidebar .side-right {
+  background-color: white;
+  height: 100vh;
+  padding: 0.5rem;
+}
+
+#sidebar .side-right .right1 {
+  height: 10%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1rem;
+}
+
+#sidebar .side-right .right2 {
+  height: 80%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#sidebar .side-right .right3 {
+  height: 5%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#sidebar .side-right .right4 {
+  height: 5%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#sidebar .side-right i {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+#sidebar .side-right .right2 i {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* End of SideBar */
+
+/* Contact Validation */
+
+.invalid::-webkit-input-placeholder {
+  color: #f03a17 !important;
+}
+
+.invalid {
+  color: #f03a17 !important;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.valid {
+  color: green !important;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+/* End of Contact Validation */
